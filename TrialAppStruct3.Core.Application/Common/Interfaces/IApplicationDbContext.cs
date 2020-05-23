@@ -10,7 +10,7 @@ namespace TrialAppStruct3.Core.Application.Common.Interfaces
 {
     public interface IApplicationDbContext
     {
-        DbSet<Publisher> Publishers { get; set; }
+        DbSet<TrialAppStruct3.Core.Domain.Entities.Publisher> Publishers { get; set; }
 
         DbSet<Author> Authors { get; set; }
 

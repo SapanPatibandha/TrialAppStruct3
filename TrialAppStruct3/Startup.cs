@@ -15,6 +15,8 @@ using TrialAppStrruct3.Infrastructure.Persistence.Data;
 using TrialAppStruct3.Core.Application.Common.Interfaces;
 using TrialAppStruct3.Services;
 using TrialAppStruct3.Core.Application;
+using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Mvc;
 
 namespace TrialAppStruct3
 {
@@ -36,7 +38,28 @@ namespace TrialAppStruct3
             services.AddScoped<ICurrentUserService, CurrentUserService>();
 
             services.AddControllersWithViews();
+
             services.AddRazorPages();
+
+            services.AddHttpContextAccessor();
+
+            services
+                .AddControllersWithViews()
+                .AddNewtonsoftJson()
+                .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<IApplicationDbContext>());
+
+
+            // Customise default API behaviour
+            services.Configure<ApiBehaviorOptions>(options =>
+            {
+                options.SuppressModelStateInvalidFilter = true;
+            });
+            services.AddOpenApiDocument(configure =>
+            {
+                configure.Title = "Application Name API";
+            });
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -64,8 +87,14 @@ namespace TrialAppStruct3
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller}/{action=Index}/{id?}");
+                endpoints.MapControllers();
                 endpoints.MapRazorPages();
             });
+
+
         }
     }
 }

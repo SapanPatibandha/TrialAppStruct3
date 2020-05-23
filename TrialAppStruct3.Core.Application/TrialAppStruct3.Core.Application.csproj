@@ -5,10 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
     <PackageReference Include="FluentValidation" Version="9.0.0-preview4" />
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="9.0.0-preview4" />
+    <PackageReference Include="MediatR" Version="8.0.1" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.4" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0-preview.4.20251.6" />
   </ItemGroup>
 
   <ItemGroup>
@@ -26,8 +30,6 @@
     <Folder Include="Book\Queries\GetBookList\" />
     <Folder Include="Publisher\Commands\UpdatePublisher\" />
     <Folder Include="Publisher\Commands\DeletePublisher\" />
-    <Folder Include="Publisher\Queries\GetPublisherDetail\" />
-    <Folder Include="Publisher\Queries\GetPublisherList\" />
   </ItemGroup>
 
 </Project>
