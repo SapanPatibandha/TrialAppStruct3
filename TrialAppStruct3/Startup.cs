@@ -14,6 +14,7 @@ using Microsoft.Extensions.Hosting;
 using TrialAppStrruct3.Infrastructure.Persistence.Data;
 using TrialAppStruct3.Core.Application.Common.Interfaces;
 using TrialAppStruct3.Services;
+using TrialAppStruct3.Core.Application;
 
 namespace TrialAppStruct3
 {
@@ -29,6 +30,7 @@ namespace TrialAppStruct3
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddApplication();
             services.AddPersistence(Configuration);
 
             services.AddScoped<ICurrentUserService, CurrentUserService>();

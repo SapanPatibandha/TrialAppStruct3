@@ -6,11 +6,28 @@
 
   <ItemGroup>
     <PackageReference Include="FluentValidation" Version="9.0.0-preview4" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="9.0.0-preview4" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.4" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\TrialAppStruct3.Core.Domain\TrialAppStruct3.Core.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Author\Commands\DeleteAuthor\" />
+    <Folder Include="Author\Commands\UpdateAuthor\" />
+    <Folder Include="Author\Queries\GetAuthorDetail\" />
+    <Folder Include="Author\Queries\GetAuthorList\" />
+    <Folder Include="Book\Commands\GetBookDetail\" />
+    <Folder Include="Book\Commands\GetBookList\" />
+    <Folder Include="Book\Queries\GetBookDetail\" />
+    <Folder Include="Book\Queries\GetBookList\" />
+    <Folder Include="Publisher\Commands\UpdatePublisher\" />
+    <Folder Include="Publisher\Commands\DeletePublisher\" />
+    <Folder Include="Publisher\Queries\GetPublisherDetail\" />
+    <Folder Include="Publisher\Queries\GetPublisherList\" />
   </ItemGroup>
 
 </Project>
