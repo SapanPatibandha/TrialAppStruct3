@@ -15,4 +15,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TrialAppStrruct3.Infrastructure.Infrastructure\TrialAppStrruct3.Infrastructure.Infrastructure.csproj" />
+    <ProjectReference Include="..\TrialAppStruct3.Core.Application\TrialAppStruct3.Core.Application.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -12,6 +12,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using TrialAppStrruct3.Infrastructure.Persistence.Data;
+using TrialAppStruct3.Core.Application.Common.Interfaces;
+using TrialAppStruct3.Services;
 
 namespace TrialAppStruct3
 {
@@ -28,6 +30,10 @@ namespace TrialAppStruct3
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddPersistence(Configuration);
+
+            services.AddScoped<ICurrentUserService, CurrentUserService>();
+
+            services.AddControllersWithViews();
             services.AddRazorPages();
         }
 
