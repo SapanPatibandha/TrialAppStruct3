@@ -17,6 +17,8 @@ using TrialAppStruct3.Services;
 using TrialAppStruct3.Core.Application;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Mvc;
+using NSwag;
+using NSwag.Generation.Processors.Security;
 
 namespace TrialAppStruct3
 {
@@ -54,12 +56,20 @@ namespace TrialAppStruct3
             {
                 options.SuppressModelStateInvalidFilter = true;
             });
+
             services.AddOpenApiDocument(configure =>
             {
                 configure.Title = "Application Name API";
+                configure.AddSecurity("JWT", Enumerable.Empty<string>(), new OpenApiSecurityScheme
+                {
+                    Type = OpenApiSecuritySchemeType.ApiKey,
+                    Name = "Authorization",
+                    In = OpenApiSecurityApiKeyLocation.Header,
+                    Description = "Type into the textbox: Bearer {your JWT token}."
+                });
+
+                configure.OperationProcessors.Add(new AspNetCoreOperationSecurityScopeProcessor("JWT"));
             });
-
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -69,6 +79,8 @@ namespace TrialAppStruct3
             {
                 app.UseDeveloperExceptionPage();
                 app.UseDatabaseErrorPage();
+                app.UseOpenApi();
+                app.UseSwaggerUi3();
             }
             else
             {
