@@ -28,8 +28,6 @@
     <Folder Include="Book\Commands\GetBookList\" />
     <Folder Include="Book\Queries\GetBookDetail\" />
     <Folder Include="Book\Queries\GetBookList\" />
-    <Folder Include="Publisher\Commands\UpdatePublisher\" />
-    <Folder Include="Publisher\Commands\DeletePublisher\" />
   </ItemGroup>
 
 </Project>
