@@ -5,8 +5,8 @@ using Microsoft.Extensions.DependencyInjection;
 namespace TrialAppStruct3.Controllers
 {
     //[ApiController]
-    [Route("api/[controller]/[action]")]
-    public abstract class BaseController : ControllerBase
+    [Route("api/v{version:apiVersion}/[controller]/[action]")]
+    public abstract class ApplicationControllerBase : ControllerBase
     {
         private IMediator _mediator;
 

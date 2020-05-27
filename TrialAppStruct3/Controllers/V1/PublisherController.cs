@@ -8,9 +8,9 @@ using TrialAppStruct3.Core.Application.Publisher.Commands.UpdatePublisher;
 using TrialAppStruct3.Core.Application.Publisher.Queries.GetPublisherDetail;
 using TrialAppStruct3.Core.Application.Publisher.Queries.GetPublisherList;
 
-namespace TrialAppStruct3.Controllers
+namespace TrialAppStruct3.Controllers.V1
 {
-    public class PublisherController : BaseController
+    public class PublisherController : ApplicationControllerBaseV1
     {
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
