@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using TrialAppStruct3.Core.Domain.Common;
+﻿using TrialAppStruct3.Core.Domain.Common;
 
 namespace TrialAppStruct3.Core.Domain.Entities
 {
@@ -15,10 +12,8 @@ namespace TrialAppStruct3.Core.Domain.Entities
 
         public int PublisherID { get; set; }
 
-
         public Author Author { get; set; }
 
         public Publisher Publisher { get; set; }
-
     }
 }

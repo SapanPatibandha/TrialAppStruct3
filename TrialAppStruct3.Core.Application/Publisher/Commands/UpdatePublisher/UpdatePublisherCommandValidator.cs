@@ -1,7 +1,4 @@
 ﻿using FluentValidation;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace TrialAppStruct3.Core.Application.Publisher.Commands.UpdatePublisher
 {
@@ -19,7 +16,6 @@ namespace TrialAppStruct3.Core.Application.Publisher.Commands.UpdatePublisher
 
             RuleFor(d => d.Address)
                 .MaximumLength(250);
-
         }
     }
 }

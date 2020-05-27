@@ -1,7 +1,4 @@
 ﻿using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using TrialAppStruct3.Core.Application.Common.Interfaces;
@@ -15,7 +12,6 @@ namespace TrialAppStruct3.Core.Application.Publisher.Commands.CreatePublisher
         public string PublishingHouse { get; set; }
 
         public string Address { get; set; }
-
 
         public class Handler : IRequestHandler<CreatePublisherCommand>
         {

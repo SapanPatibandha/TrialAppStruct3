@@ -1,8 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using TrialAppStruct3.Core.Domain.Entities;
 
 namespace TrialAppStrruct3.Infrastructure.Persistence.Configurations
@@ -20,7 +17,6 @@ namespace TrialAppStrruct3.Infrastructure.Persistence.Configurations
 
             builder.Property(e => e.LastName)
                 .HasMaxLength(50);
-
         }
     }
 }

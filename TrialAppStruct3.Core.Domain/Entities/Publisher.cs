@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using TrialAppStruct3.Core.Domain.Common;
 
 namespace TrialAppStruct3.Core.Domain.Entities

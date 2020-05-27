@@ -1,13 +1,11 @@
 ﻿using AutoMapper;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using System.Text;
 
 namespace TrialAppStruct3.Core.Application.Common.Mappings
 {
-    public class MappingProfile: Profile
+    public class MappingProfile : Profile
     {
         public MappingProfile()
         {
@@ -28,6 +26,5 @@ namespace TrialAppStruct3.Core.Application.Common.Mappings
                 methodInfo?.Invoke(instance, new object[] { this });
             }
         }
-
     }
 }

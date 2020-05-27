@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using TrialAppStruct3.Core.Application.Publisher.Commands.CreatePublisher;
 using TrialAppStruct3.Core.Application.Publisher.Commands.DeletePublisher;
 using TrialAppStruct3.Core.Application.Publisher.Commands.UpdatePublisher;
@@ -56,6 +54,5 @@ namespace TrialAppStruct3.Controllers
 
             return NoContent();
         }
-
     }
 }

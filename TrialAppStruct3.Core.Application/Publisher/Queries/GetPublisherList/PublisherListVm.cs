@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace TrialAppStruct3.Core.Application.Publisher.Queries.GetPublisherList
 {

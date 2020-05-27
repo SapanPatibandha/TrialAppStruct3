@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
 using TrialAppStruct3.Core.Application.Common.Interfaces;
 using TrialAppStruct3.Core.Domain.Common;
 using TrialAppStruct3.Core.Domain.Entities;
@@ -29,7 +27,6 @@ namespace TrialAppStrruct3.Infrastructure.Persistence.Data
 
         public DbSet<Book> Books { get; set; }
 
-
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken)
         {
             foreach (var entry in ChangeTracker.Entries<AuditEntity>())
@@ -40,6 +37,7 @@ namespace TrialAppStrruct3.Infrastructure.Persistence.Data
                         entry.Entity.CreateBy = _currentUserService.UserId;
                         entry.Entity.CreatedOn = DateTime.UtcNow;
                         break;
+
                     case EntityState.Modified:
                         entry.Entity.ModifiedBy = _currentUserService.UserId;
                         entry.Entity.ModifiedOn = DateTime.UtcNow;

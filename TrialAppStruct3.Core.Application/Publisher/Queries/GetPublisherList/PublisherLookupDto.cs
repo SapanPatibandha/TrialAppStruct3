@@ -1,7 +1,4 @@
 ﻿using AutoMapper;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using TrialAppStruct3.Core.Application.Common.Mappings;
 
 namespace TrialAppStruct3.Core.Application.Publisher.Queries.GetPublisherList
@@ -21,6 +18,5 @@ namespace TrialAppStruct3.Core.Application.Publisher.Queries.GetPublisherList
                 .ForMember(p => p.PublishingHouse, pmv => pmv.MapFrom(s => s.PublishingHouse))
                 .ForMember(p => p.Address, pmv => pmv.MapFrom(s => s.Address));
         }
-
     }
 }

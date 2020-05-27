@@ -1,24 +1,17 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using TrialAppStrruct3.Infrastructure.Persistence.Data;
-using TrialAppStruct3.Core.Application.Common.Interfaces;
-using TrialAppStruct3.Services;
-using TrialAppStruct3.Core.Application;
-using FluentValidation.AspNetCore;
-using Microsoft.AspNetCore.Mvc;
 using NSwag;
 using NSwag.Generation.Processors.Security;
+using System.Linq;
+using TrialAppStrruct3.Infrastructure.Persistence.Data;
+using TrialAppStruct3.Core.Application;
+using TrialAppStruct3.Core.Application.Common.Interfaces;
+using TrialAppStruct3.Services;
 
 namespace TrialAppStruct3
 {
@@ -49,7 +42,6 @@ namespace TrialAppStruct3
                 .AddControllersWithViews()
                 .AddNewtonsoftJson()
                 .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<IApplicationDbContext>());
-
 
             // Customise default API behaviour
             services.Configure<ApiBehaviorOptions>(options =>
@@ -105,8 +97,6 @@ namespace TrialAppStruct3
                 endpoints.MapControllers();
                 endpoints.MapRazorPages();
             });
-
-
         }
     }
 }

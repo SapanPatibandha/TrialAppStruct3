@@ -1,8 +1,5 @@
 ﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using TrialAppStruct3.Core.Application.Common.Exception;
@@ -45,6 +42,5 @@ namespace TrialAppStruct3.Core.Application.Publisher.Commands.UpdatePublisher
                 return Unit.Value;
             }
         }
-
     }
 }

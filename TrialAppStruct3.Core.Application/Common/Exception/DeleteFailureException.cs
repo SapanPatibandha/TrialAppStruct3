@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace TrialAppStruct3.Core.Application.Common.Exception
+﻿namespace TrialAppStruct3.Core.Application.Common.Exception
 {
     public class DeleteFailureException : System.Exception
     {

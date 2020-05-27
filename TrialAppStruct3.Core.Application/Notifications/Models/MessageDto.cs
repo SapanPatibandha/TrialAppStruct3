@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace TrialAppStruct3.Core.Application.Notifications.Models
+﻿namespace TrialAppStruct3.Core.Application.Notifications.Models
 {
     public class MessageDto
     {

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using TrialAppStruct3.Core.Domain.Common;
 
 namespace TrialAppStruct3.Core.Domain.Entities
@@ -21,6 +20,5 @@ namespace TrialAppStruct3.Core.Domain.Entities
         public DateTime? DOB { get; set; }
 
         public ICollection<Book> Books { get; private set; }
-
     }
 }

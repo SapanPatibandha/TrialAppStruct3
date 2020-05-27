@@ -1,13 +1,9 @@
 ﻿using MediatR;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using TrialAppStruct3.Core.Application.Common.Exception;
 using TrialAppStruct3.Core.Application.Common.Interfaces;
-using TrialAppStruct3.Core.Domain.Entities;
 
 namespace TrialAppStruct3.Core.Application.Publisher.Commands.DeletePublisher
 {

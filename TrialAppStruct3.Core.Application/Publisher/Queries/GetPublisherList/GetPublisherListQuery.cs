@@ -2,10 +2,7 @@
 using AutoMapper.QueryableExtensions;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using TrialAppStruct3.Core.Application.Common.Interfaces;
@@ -14,7 +11,6 @@ namespace TrialAppStruct3.Core.Application.Publisher.Queries.GetPublisherList
 {
     public class GetPublisherListQuery : IRequest<PublisherListVm>
     {
-
         public class GetPublisherListQueryHandler : IRequestHandler<GetPublisherListQuery, PublisherListVm>
         {
             private readonly IApplicationDbContext _context;
@@ -41,6 +37,5 @@ namespace TrialAppStruct3.Core.Application.Publisher.Queries.GetPublisherList
                 return vm;
             }
         }
-
     }
 }

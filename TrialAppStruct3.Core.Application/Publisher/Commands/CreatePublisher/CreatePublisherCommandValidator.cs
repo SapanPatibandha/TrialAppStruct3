@@ -1,8 +1,4 @@
 ﻿using FluentValidation;
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Text;
 
 namespace TrialAppStruct3.Core.Application.Publisher.Commands.CreatePublisher
 {

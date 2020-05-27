@@ -1,7 +1,4 @@
 ﻿using AutoMapper;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using TrialAppStruct3.Core.Application.Common.Mappings;
 
 namespace TrialAppStruct3.Core.Application.Publisher.Queries.GetPublisherDetail
