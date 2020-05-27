@@ -9,7 +9,7 @@ namespace TrialAppStruct3.Core.Application.Common.Interfaces
     {
         DbSet<TrialAppStruct3.Core.Domain.Entities.Publisher> Publishers { get; set; }
 
-        DbSet<Author> Authors { get; set; }
+        DbSet<TrialAppStruct3.Core.Domain.Entities.Author> Authors { get; set; }
 
         DbSet<Book> Books { get; set; }
 
