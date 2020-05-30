@@ -4,7 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace TrialAppStruct3BlazorApp.Controllers
 {
-    //[ApiController]
+    [ApiController]
     [Route("api/v{version:apiVersion}/[controller]/[action]")]
     public abstract class ApplicationControllerBase : ControllerBase
     {

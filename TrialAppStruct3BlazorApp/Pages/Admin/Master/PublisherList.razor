@@ -8,19 +8,23 @@
 }
 else
 {
-    <table>
-        <tr>
-            <td>Publisher ID</td>
-            <td>Publisher House</td>
-            <td>Address</td>
-        </tr>
-        <tr>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Publisher ID</th>
+                <th scope="col">Publisher House</th>
+                <th scope="col">Address</th>
+            </tr>
+        </thead>
+        <tbody>
             @foreach (var publisher in Publishers.Publishers)
             {
-                <td>@publisher.PublisherID</td>
-                <td>@publisher.PublishingHouse</td>
-                <td>@publisher.Address</td>
+                <tr>
+                    <th scope="row">@publisher.PublisherID</th>
+                    <td>@publisher.PublishingHouse</td>
+                    <td>@publisher.Address</td>
+                </tr>
             }
-        </tr>
+        </tbody>
     </table>
 }
