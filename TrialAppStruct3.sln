@@ -11,13 +11,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{FD67F9F1-E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{43B8A3EC-E8EC-4F56-9E31-071B83C91B22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrialAppStruct3.Core.Domain", "TrialAppStruct3.Core.Domain\TrialAppStruct3.Core.Domain.csproj", "{B6DDA3B0-9D1D-433A-8709-45E26FFE6901}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrialAppStruct3.Core.Domain", "TrialAppStruct3.Core.Domain\TrialAppStruct3.Core.Domain.csproj", "{B6DDA3B0-9D1D-433A-8709-45E26FFE6901}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrialAppStruct3.Core.Application", "TrialAppStruct3.Core.Application\TrialAppStruct3.Core.Application.csproj", "{19D28BBC-1CEF-412E-81E6-B07A0CF499BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrialAppStruct3.Core.Application", "TrialAppStruct3.Core.Application\TrialAppStruct3.Core.Application.csproj", "{19D28BBC-1CEF-412E-81E6-B07A0CF499BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrialAppStrruct3.Infrastructure.Persistence", "TrialAppStrruct3.Infrastructure.Persistence\TrialAppStrruct3.Infrastructure.Persistence.csproj", "{2712F03D-EDF3-4D4E-8CCF-87AF7AABC06D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrialAppStrruct3.Infrastructure.Persistence", "TrialAppStrruct3.Infrastructure.Persistence\TrialAppStrruct3.Infrastructure.Persistence.csproj", "{2712F03D-EDF3-4D4E-8CCF-87AF7AABC06D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrialAppStrruct3.Infrastructure.Infrastructure", "TrialAppStrruct3.Infrastructure.Infrastructure\TrialAppStrruct3.Infrastructure.Infrastructure.csproj", "{34A62AAA-4228-4009-9106-48712B88D3DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrialAppStrruct3.Infrastructure.Infrastructure", "TrialAppStrruct3.Infrastructure.Infrastructure\TrialAppStrruct3.Infrastructure.Infrastructure.csproj", "{34A62AAA-4228-4009-9106-48712B88D3DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrialAppStruct3BlazorApp", "TrialAppStruct3BlazorApp\TrialAppStruct3BlazorApp.csproj", "{72E5C0D1-5BD4-478A-80C6-8C29F56F8D45}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{34A62AAA-4228-4009-9106-48712B88D3DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34A62AAA-4228-4009-9106-48712B88D3DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34A62AAA-4228-4009-9106-48712B88D3DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72E5C0D1-5BD4-478A-80C6-8C29F56F8D45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72E5C0D1-5BD4-478A-80C6-8C29F56F8D45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72E5C0D1-5BD4-478A-80C6-8C29F56F8D45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72E5C0D1-5BD4-478A-80C6-8C29F56F8D45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +61,7 @@ Global
 		{19D28BBC-1CEF-412E-81E6-B07A0CF499BD} = {FD67F9F1-E789-4091-86F0-D359E08502E5}
 		{2712F03D-EDF3-4D4E-8CCF-87AF7AABC06D} = {43B8A3EC-E8EC-4F56-9E31-071B83C91B22}
 		{34A62AAA-4228-4009-9106-48712B88D3DC} = {43B8A3EC-E8EC-4F56-9E31-071B83C91B22}
+		{72E5C0D1-5BD4-478A-80C6-8C29F56F8D45} = {0CB5CD3F-884A-466D-B704-5C47B4A913D7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {78D43132-0C74-4365-B42E-0B4E1EBE410D}

@@ -1,0 +1,26 @@
+﻿@page "/PublisherList"
+
+<h3>Publisher List</h3>
+
+@if (Publishers == null)
+{
+    <div class="spinner"></div>
+}
+else
+{
+    <table>
+        <tr>
+            <td>Publisher ID</td>
+            <td>Publisher House</td>
+            <td>Address</td>
+        </tr>
+        <tr>
+            @foreach (var publisher in Publishers.Publishers)
+            {
+                <td>@publisher.PublisherID</td>
+                <td>@publisher.PublishingHouse</td>
+                <td>@publisher.Address</td>
+            }
+        </tr>
+    </table>
+}
